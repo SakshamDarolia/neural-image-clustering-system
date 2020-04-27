@@ -33,14 +33,16 @@ The only downside of supervised clustering is that you have to have a trained mo
   <img src="screenshot.png" width="800" title="Home Screen">
 </p>
 
+The images that can be seen are already clustered images, that I've added to the database of the clustering system.
+
 ### Add Images: 
 The clustering system has its own database in which it maintains all the images that are present into clusters. This button is used to add new images to the database of clustering system.
 
 ### Clusters:
 This button classifies the images and assigns them to one of the clusters. It cannot be used without adding new images and will throw an error. So, to use this button images must be added at first using ‘Add Images’ button. The results of the previous images in the database are stored and dont need to be re-evaluated.
 
-### Show Cluster:
-There are four ‘Show Cluster’ buttons, separate for each cluster. Clicking this button will open a new window with a zoomed in view of all the images present in that particular cluster. The images can be enlarged by clicking on them.
+### Building Cluster/ Person Cluster/ Vehicle Cluster/ Weapon Cluster:
+Clicking one of these buttons will open a new window with a zoomed in view of all the images present in that particular cluster. The images can be enlarged by clicking on them.
 
 ### Filter:
 This button is used to filter out the images that are present in the database. There are 3 sliders from which only one can be used at a time. The position of slider represents the probability of occurence of either class present at two ends and the images corresponding to that are displayed in the side area.
