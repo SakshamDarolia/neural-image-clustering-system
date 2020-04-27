@@ -39,7 +39,7 @@ The images that can be seen are already clustered images, that I've added to the
 The clustering system has its own database in which it maintains all the images that are present into clusters. This button is used to add new images to the database of clustering system.
 
 ### Clusters:
-This button classifies the images and assigns them to one of the clusters. It cannot be used without adding new images and will throw an error. So, to use this button images must be added at first using ‘Add Images’ button. The results of the previous images in the database are stored and dont need to be re-evaluated.
+This button classifies the images and assigns them to one of the clusters with the help of probability of each class extracted from a given input image. Probabilty of occurence of a class in an image can be extracted by using a softmax layer at the end of a NN. It cannot be used without adding new images and will throw an error. So, to use this button images must be added at first using ‘Add Images’ button. The results of the previous images in the database are stored and dont need to be re-evaluated.
 
 ### Building Cluster/ Person Cluster/ Vehicle Cluster/ Weapon Cluster:
 Clicking one of these buttons will open a new window with a zoomed in view of all the images present in that particular cluster. The images can be enlarged by clicking on them.
