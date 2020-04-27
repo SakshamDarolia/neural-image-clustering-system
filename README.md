@@ -45,4 +45,4 @@ This button classifies the images and assigns them to one of the clusters with t
 Clicking one of these buttons will open a new window with a zoomed in view of all the images present in that particular cluster. The images can be enlarged by clicking on them.
 
 ### Filter:
-This button is used to filter out the images that are present in the database. There are 3 sliders from which only one can be used at a time. The position of slider represents the probability of occurence of either class present at two ends and the images corresponding to that are displayed in the side area.
+This button is used to filter out the images that are present in the database. There are 3 sliders from which only one can be used at a time. The position of slider represents the probability of occurence of either class present at two ends i.e if the slider is in the middle then those images will be displayed in which both classes have a 50/50 chance of occurence. And if the slider is pushed all the way to right then those images will be displayed in which 1st class(on the left of slider bar) has probability as 1.
