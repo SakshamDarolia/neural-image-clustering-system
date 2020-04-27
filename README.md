@@ -1,5 +1,5 @@
 # neural-image-clustering-system
-It takes images as input and then assigns them to a cluster based on the probability of each class in an image(extracted using a softmax layer at the end of network). For this an ensemble model of 3 ResNet50s(trained myself) is deployed at backend.
+It takes images as input and then assigns them to a cluster based on the probability of each class in an image(extracted using a softmax layer at the end of network). For this an ensemble model of 3 ResNet50s(trained myself) is deployed at backend instead of a single ResNet because at the time of testing it was missing out on some objects in images when they were closer than a particular distance. It was providing lower than expected probabilities for such targets. So, I created an ensemble model in which each ResNet is trained to handle specific part which helped me acheive good results.
 
 Here I've tried a new supervised way for clustering which is faster and in some cases more accurate than K-means because of the use of a trained model at backend. But as of now this project only works for 4 classes namely building, person, weapon and vehicle.
 
@@ -27,4 +27,16 @@ The only downside of supervised clustering is that you have to have a trained mo
 2. Activate the environment in which PyTorch is installed. (Skip this if you've PyTorch installed on base)
 3. Compile and execute 'impl.py' using, $ python impl.py
 
-file:///home/evil_overlord/Walls/00d4148cf10e821c-mercedes-benz-g63-amg-black-hd-wallpapers.jpg
+## Explaination for various buttons on the main window is given below,
+
+### Add Images: 
+The clustering system has its own database in which it maintains all the images that are present into clusters. This button is used to add new images to the database of clustering system.
+
+### Clusters:
+This button classifies the images and assigns them to one of the clusters. It cannot be used without adding new images and will throw an error. So, to use this button images must be added at first using ‘Add Images’ button. The results of the previous images in the database are stored and dont need to be re-evaluated.
+
+### Show Cluster:
+There are four ‘Show Cluster’ buttons, separate for each cluster. Clicking this button will open a new window with a zoomed in view of all the images present in that particular cluster. The images can be enlarged by clicking on them.
+
+### Filter:
+This button is used to filter out the images that are present in the database. There are 3 sliders from which only one can be used at a time. The position of slider represents the probability of occurence of either class present at two ends and the images corresponding to that are displayed in the side area.
