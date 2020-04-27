@@ -29,6 +29,10 @@ The only downside of supervised clustering is that you have to have a trained mo
 
 ## Explaination for various buttons on the main window is given below,
 
+<p align="center">
+  <img src="screenshot.png" width="800" title="Home Screen">
+</p>
+
 ### Add Images: 
 The clustering system has its own database in which it maintains all the images that are present into clusters. This button is used to add new images to the database of clustering system.
 
